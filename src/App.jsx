@@ -1,13 +1,17 @@
-import './App.css';
+import React from "react";
+import Footer from "./components/Footer";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
+import DescargaAplicacion from "./components/DescargaAplicacion";
 
 function App() {
   return (
-    <div>
-      <h1>CODERHOUSE</h1>
-      <p>Curso de React JSS</p>
-      <p><img src="images/cgOficina150.jpg" alt="" /></p>
+    <div className="container-fluid">
+      <NavBar />
+      <ItemListContainer greeting={"No se encontraton los productos!"}/>
+      <DescargaAplicacion />
+      <Footer />
     </div>
-    
   );
 }
 

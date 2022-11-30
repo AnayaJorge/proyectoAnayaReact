@@ -2,3 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  color: black;
+  background-color: whitesmoke;
+}
+
+.fondoRojo{
+  color: white;
+  background-color: rgb(219, 15, 15);
+}
+
+.fondoNegro{
+  color: white;
+  background-color: black;
+}
+
+.fondoGris{
+  color: white;
+  background-color: darkgray;
+}
+
