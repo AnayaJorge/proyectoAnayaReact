@@ -13,7 +13,7 @@ const Item = () => {
             });
         });
 
-        promesa.then((data)=> {
+        promesa.then((data)=> { 
             setItem(data);
         });
     },[id]);

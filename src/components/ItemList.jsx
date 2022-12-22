@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import {Link, useParams} from "react-router-dom";
-import arrayProductos from "./jason/arrayProductos.json";
+/*import arrayProductos from "./jason/arrayProductos.json";*/
 
 const ItemList = () => {
     const [items, setItem] = useState([]);
     const {categoryId} = useParams();
     
-    useEffect(() =>{
 
+    // Promesa que accede a un array 
+    /*useEffect(() =>{
         const promesa = new Promise ((resolve) => {
             setTimeout (()=>{
                 resolve(categoryId ? arrayProductos.filter(item => item.categoria === categoryId) : arrayProductos);
@@ -17,7 +18,9 @@ const ItemList = () => {
         promesa.then((data)=> {
             setItem(data);
         });
-    },[categoryId]);
+    },[categoryId]);*/
+
+
 
     return (
         <div className="container">
