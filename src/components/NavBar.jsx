@@ -1,6 +1,6 @@
 import React from "react";
 import {Link, NavLink} from "react-router-dom";
-import CarWidget from "./CarWidget";
+import CartWidget from "./CartWidget";
 
 const NavBar = () =>{
     return (
@@ -16,17 +16,17 @@ const NavBar = () =>{
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <div className="navbar-nav">
                                     <NavLink className="nav-link" activeclassname="active" to={"/"}>Productos</NavLink>
-                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/departamentos"}>Departamentos</NavLink>
-                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/casas"}>Casas</NavLink>
-                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/locales"}>Locales</NavLink>
-                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/lotes"}>Lotes</NavLink>
+                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/DEPARTAMENTOS"}>Departamentos</NavLink>
+                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/CASAS"}>Casas</NavLink>
+                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/LOCALES"}>Locales</NavLink>
+                                    <NavLink className="nav-link" activeclassname="active" to={"/categoria/LOTES"}>Lotes</NavLink>
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
                 <div className="col-md-6 d-flex justify-content-end align-items-center">
-                    <CarWidget />
+                    <CartWidget />
                 </div>
             </div>
         </div>

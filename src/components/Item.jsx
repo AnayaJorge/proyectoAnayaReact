@@ -1,35 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import arrayProductos from "./jason/arrayProductos.json";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Item = () => {
-    const [item, setItem] = useState({});
-    const {id} = useParams();
-
-    useEffect(() => {
-        const promesa = new Promise ((resolve) => {
-            setTimeout (() => {
-                resolve(arrayProductos.find(item => item.id === parseInt(id)));
-            });
-        });
-
-        promesa.then((data)=> { 
-            setItem(data);
-        });
-    },[id]);
-
+const Item = ({item}) => {
     return (
-        <div className = "container">
-            <div className = "row">
-            <div className="col-md-6 offset-md-3 text-center">
-                    <img src={item.imagen} className={"img-fluid"} alt={item.nombre} />
-                    <h1>{item.nombre}</h1>
-                    <p>{item.descripcion}</p>
-                    <p><b>${item.precio}</b></p>
-                    <Link to={"/"} className={"btn btn-secondary"}>Volver atrás</Link>
-                    <p></p>
+    
+        <div className="card text-center mb-3">
+            <Link to={"/item/" + item.id} className="text-decoration-none text-dark">
+                <img src={item.imagen} className="card-img-top" alt={item.nombre} />
+                <div className="card-body">
+                    <p className="card-text">{item.categoria}</p>
+                    <p className="card-text">{item.nombre}</p>
+                    <p className="card-text"><b>USD {item.precio}</b></p>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

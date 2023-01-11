@@ -1,8 +1,0 @@
-[
-    {"id":1, "categoria":"departamentos", "tipologia": "1 dormitorio", "imagen":"/images/departamento_01.webp", "nombre":"Departamento 01", "precio":55000, "descripcion":"descripcion" },
-    {"id":2, "categoria":"departamentos", "tipologia": "2 dormitorios", "imagen":"/images/departamento_02.webp", "nombre":"Departamento 02", "precio":65000, "descripcion":"descripcion" },
-    {"id":3, "categoria":"casas", "tipologia":"3 dormitorios", "imagen":"/images/casa_01.webp", "nombre":"Casa 01", "precio":185000, "descripcion":"descripcion" },
-    {"id":4, "categoria":"locales", "tipologia":"local", "imagen":"/images/local_01.webp", "nombre":"Local 01", "precio":60000, "descripcion":"descripcion" },
-    {"id":5, "categoria":"locales", "tipologia":"local", "imagen":"/images/local_02.webp", "nombre":"Local 02", "precio":65000, "descripcion":"descripcion" },
-    {"id":6, "categoria":"lotes", "tipologia":"lote", "imagen":"/images/lote_01.webp", "nombre":"Lote 01", "precio":5000, "descripcion":"descripcion" }
-]
